@@ -9,17 +9,18 @@ html {
 
 /*Set background image*/
 .container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+	background-image: url("paper.gif");
+	background-color: #97ff90;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
 }
 
 /* Position text in the middle */
 .middle {
   position: absolute;
-  color: beige;
-  top: 70%;
+  color: black;
+  top: 50%;
   left: 39%;
   text-align: center;
   font-size: 25px;
@@ -37,11 +38,17 @@ html {
 
 /*Set text color for a tag inside middle class and ul>li element*/
 .middle ul li a {
-  color: beige;
+  color: black;
 }
 
 /*Change text color and decoration for a tags inside middle class and ul>li element*/
 .middle ul li a:hover {
   color: red;
   text-decoration: none;
+}
+
+h2 {
+	color: black;
+	font-size: 30px;
+	font-family: Helvetica;
 }
