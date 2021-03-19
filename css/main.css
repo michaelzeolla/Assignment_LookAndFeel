@@ -11,14 +11,16 @@ html {
 	height: 100%;
 	background-position: center;
 	background-size: cover;
+	overflow-y: scroll;
+	text-align: center;
 }
 
 /* Position text in the middle */
 .middle {
 	position: absolute;
 	color: black;
-	top: 50%;
-	left: 39%;
+	top: 20%;
+	left: 20%;
 	text-align: center;
 	font-size: 25px;
 }
@@ -48,6 +50,7 @@ h2white {
 	color: white;
 	font-size: 30px;
 	font-family: Helvetica;
+	text-align: center;
 }
 
 h2black {
@@ -82,6 +85,8 @@ pWhite {
 	width: 98%;
 	position: fixed;
 	top: 0;
+	/*ensures that text goes under when scrolling*/
+	z-index: 1;
 }
 
 	/* Styles for our links in the header */
@@ -139,6 +144,33 @@ td {
 /*Styling for normal rows*/
 td {
 	background-color: white;
+}
+
+/*To create picture columns for our "About Us"*/
+.column {
+	float: left;
+	width: 20%;
+	margin-bottom: 16px;
+	padding: 0 40px;
+}
+
+@media screen and (max-width: 650px) {
+	.column {
+		width: 100%;
+		display: block;
+	}
+}
+
+/*Subcontainer is for our picture containers within the container*/
+.subcontainer {
+	padding: 0 16px;
+}
+
+/* Clear floats */
+.subcontainer::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other 
