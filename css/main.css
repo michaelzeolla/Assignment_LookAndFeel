@@ -85,6 +85,11 @@ pWhite {
 	width: 100%;
 }
 
+.bottom{
+	position:relative;
+	text-align:center;
+	top: 0px;
+}
 /* Creates a dark green header */
 .header {
 	overflow: hidden;
